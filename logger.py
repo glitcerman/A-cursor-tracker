@@ -4,7 +4,7 @@ os.makedirs("logs", exist_ok=True)
 
 log_n = 0
 for file in os.listdir("logs"):
-    if file.startswith("log_") and file.endswith(".txt") and file != "log_n.txt":
+    if file.startswith("log_") and file.endswith(".txt"):
         log_n += 1
 
 def logging(message: str):
